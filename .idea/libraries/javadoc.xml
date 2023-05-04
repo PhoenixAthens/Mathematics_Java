@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="javadoc">
+    <CLASSES />
+    <JAVADOC>
+      <root url="file://$PROJECT_DIR$/../../Java Graphics Programming JOGL/jogl/javadoc" />
+      <root url="file://$PROJECT_DIR$/../../Java Graphics Programming JOGL/jogl/javadoc_jogl_spec" />
+      <root url="file://$PROJECT_DIR$/../../Java Graphics Programming JOGL/jogl/javadoc_nativewindow_spec" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
