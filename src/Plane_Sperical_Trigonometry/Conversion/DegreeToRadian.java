@@ -1,6 +1,6 @@
-package Plane_Sperical_Trigonometry;
+package Plane_Sperical_Trigonometry.Conversion;
 
-public class Convert_DegreeToRadian {
+public class DegreeToRadian {
     // 1 rad = 180/pi deg
     // 1 deg = pi/180 rad
     // To calculate Smaller angles we use minutes and seconds
