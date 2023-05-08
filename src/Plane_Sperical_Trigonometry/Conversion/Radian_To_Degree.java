@@ -53,5 +53,10 @@ public class Radian_To_Degree {
         System.out.println(DegreeMeasure.getDegreeMeasure_Fraction(5*Math.PI,9));
         System.out.println(DegreeMeasure.getDegreeMeasure_Fraction(2,5));
         System.out.println(DegreeMeasure.getDegreeMeasure_Fraction(4,3));
+        System.out.println(DegreeMeasure.getDegreeMeasure_Fraction(Math.PI,4));
+        System.out.println(DegreeMeasure.getDegreeMeasure_Fraction(7*Math.PI,10));
+        System.out.println(DegreeMeasure.getDegreeMeasure_Fraction(5*Math.PI,6));
+        System.out.println(DegreeMeasure.getDegreeMeasure_Fraction(1,4));
+        System.out.println(DegreeMeasure.getDegreeMeasure_Fraction(7,5));
     }
 }
