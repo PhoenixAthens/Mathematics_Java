@@ -10,7 +10,7 @@ public class Degree_To_Radian {
     // 1 sec= 1/3600 deg
 
     // Here we use float to reduce the precision of radian measure.
-    public static float DegreeToRadian(String degrees) {
+    public static float DegreeToRadian_String(String degrees) {
         char[] degreeArray = degrees.toCharArray();
         boolean flagOfInvalidity = false;
         for (char i : degreeArray) {
@@ -52,6 +52,15 @@ public class Degree_To_Radian {
         seconds /= 180;
         return deg + minutes + seconds;
     }
+    public static float DegreeToRadian(float degrees, float minutes, float seconds){
+        try{
+            double radianMeasure = ((degrees + (minutes/60) + (seconds/3600))*Math.PI)/180;
+            return (float)radianMeasure;
+        }catch(NumberFormatException ex){
+            System.out.println("Invalid Input: "+ex.getMessage());
+            return 0;
+        }
+    }
 
     public static void main(String...args){
         /*
@@ -61,16 +70,27 @@ public class Degree_To_Radian {
         * Seconds: "
         * */
         //Test Runs
-        System.out.println(DegreeToRadian("30"));
-        System.out.println(DegreeToRadian("135"));
-        System.out.println(DegreeToRadian("25°30'"));
-        System.out.println(DegreeToRadian("42°24'35\""));
-        System.out.println(DegreeToRadian("ABC"));
-        System.out.println(DegreeToRadian("25°"));
-        System.out.println(DegreeToRadian("160°"));
-        System.out.println(DegreeToRadian("112°40'"));
-        System.out.println(DegreeToRadian("12°12'20\""));
-        System.out.println(DegreeToRadian("75°30'"));
+        System.out.println(DegreeToRadian_String("30"));
+        System.out.println(DegreeToRadian_String("135"));
+        System.out.println(DegreeToRadian_String("25°30'"));
+        System.out.println(DegreeToRadian_String("42°24'35\""));
+        System.out.println(DegreeToRadian_String("ABC"));
+        System.out.println(DegreeToRadian_String("25°"));
+        System.out.println(DegreeToRadian_String("160°"));
+        System.out.println(DegreeToRadian_String("112°40'"));
+        System.out.println(DegreeToRadian_String("12°12'20\""));
+        System.out.println(DegreeToRadian_String("75°30'"));
+        System.out.println("==============================================================");
+        System.out.println(DegreeToRadian(30,0,0));
+        System.out.println(DegreeToRadian(135,0,0));
+        System.out.println(DegreeToRadian(25,30,0));
+        System.out.println(DegreeToRadian(42,24,35));
+        //System.out.println(DegreeToRadian());
+        System.out.println(DegreeToRadian(25,0,0));
+        System.out.println(DegreeToRadian(160,0,0));
+        System.out.println(DegreeToRadian(112,40,0));
+        System.out.println(DegreeToRadian(12,12,20));
+        System.out.println(DegreeToRadian(75,30,0));
         /*
         int val = '°';
         int minute = '\'';
