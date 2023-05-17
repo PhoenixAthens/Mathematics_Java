@@ -33,5 +33,10 @@ public class To_Mils {
         System.out.println(degreeToMills(10,15,0));
         System.out.println(RadianToMills(0.4));
         System.out.println(RadianToMills(0.06));
+        System.out.println("===================================================");
+        System.out.println(degreeToMills(45,0,0));
+        System.out.println(degreeToMills(10,15,0));
+        System.out.println(RadianToMills(0.4));
+        System.out.println(RadianToMills(0.06));
     }
 }

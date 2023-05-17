@@ -23,6 +23,15 @@ public class From_Mils {
         System.out.println(MillsToDegree(100));
         System.out.println(java.util.Arrays.toString(MillsToDegree_Defined(100)));
         System.out.println(MillsToRadian(100));
+
+        System.out.println("=".repeat(20));
+        System.out.println(java.util.Arrays.toString(MillsToDegree_Defined(25)));
+        System.out.println(MillsToRadian(25));
+        System.out.println(java.util.Arrays.toString(MillsToDegree_Defined(60)));
+        System.out.println(MillsToRadian(60));
+        System.out.println(java.util.Arrays.toString(MillsToDegree_Defined(110)));
+        System.out.println(MillsToRadian(110));
+
     }
 
 }
